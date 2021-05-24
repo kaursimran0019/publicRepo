@@ -14,26 +14,15 @@ import java.util.Date;
 @Getter
 @Entity
 @Setter
-
+//Changes Required
 public class PerfData {
 
     @Id
     private int id;
-    private  int metaId;
+    private  int metaId; //perfid
+    private String name;
     private Date creationDate;
     private int MinResp;
     private  int MaxResp;
     private int AvgResp;
 }
-
-/*
-
-    swap(a,b)
-    metadata id
-    idx
-    date created
-    url
-    min resp time
-    max resp time
-    avg resp time
- */

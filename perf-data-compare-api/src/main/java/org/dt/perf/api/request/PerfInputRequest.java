@@ -15,7 +15,10 @@ import java.util.List;
 
 public class PerfInputRequest {
 
+//    @NotBlank(message="perf1Id cannot be null")
     private String perfId1;
+//    @NotBlank(message="perf2Id cannot be null")
     private String perfId2;
+//    @NotEmpty(message="perf1Id cannot be null")
     private List<String> apiList;
 }
