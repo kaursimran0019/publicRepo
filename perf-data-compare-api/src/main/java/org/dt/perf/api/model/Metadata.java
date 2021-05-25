@@ -17,5 +17,4 @@ public class Metadata {
     private Date dateCreated;
     private String id;
 
-
 }

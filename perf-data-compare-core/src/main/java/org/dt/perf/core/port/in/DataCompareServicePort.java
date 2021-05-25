@@ -1,9 +1,15 @@
 package org.dt.perf.core.port.in;
 
-import org.dt.perf.core.domain.PerfDataResponse;
-import org.dt.perf.core.domain.PerfInputRequest;
+import org.dt.perf.api.model.PerfData;
+import org.dt.perf.api.response.PerfDataResponse;
+//import org.dt.perf.adapter.entity.PerfData;
+
+import java.util.List;
 
 public interface DataCompareServicePort {
 
-    PerfDataResponse getComparisonData(PerfInputRequest perfInputRequest);
+    Object getAllPerf();
+    Object findById(Integer id);
+    List<PerfData> findByMetaId(Integer id);
+    PerfDataResponse getComparisonData(org.dt.perf.api.request.PerfInputRequest perfInputRequest);
 }

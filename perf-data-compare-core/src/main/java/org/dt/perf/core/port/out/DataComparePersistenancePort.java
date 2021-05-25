@@ -1,5 +1,17 @@
 package org.dt.perf.core.port.out;
 
-public interface DataComparePersistenancePort {
 
+import org.dt.perf.api.model.PerfData;
+import org.dt.perf.api.request.PerfInputRequest;
+import org.dt.perf.api.response.PerfDataResponse;
+
+import java.util.List;
+
+//import org.dt.perf.api.model.PerfData;
+
+public interface DataComparePersistenancePort {
+    Object getAllPerf();
+    Object findById(Integer id);
+    List<PerfData> findByMetaId(Integer id);
+    PerfDataResponse getComparisonData(PerfInputRequest perfInputRequest);
 }
