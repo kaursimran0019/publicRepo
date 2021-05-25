@@ -5,21 +5,19 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
-
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class PerfData {
 
-    private String id;
-    private String metaDataId;
-    private Date dateCreated;
-    private String url;
-    private int minResponseTime;
-    private int maxResponseTime;
-    private int avgResponseTime;
+    private int id;
+    private  int metaId; //perfid
+    private String name;
+    //    private Date creationDate;
+    private int MinResp;
+    private  int MaxResp;
+    private int AvgResp;
 
 
 

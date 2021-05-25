@@ -7,6 +7,8 @@ import org.dt.perf.api.response.PerfDataResponse;
 
 import java.util.List;
 
+//import org.dt.perf.api.model.PerfData;
+
 public interface DataComparePersistenancePort {
     Object getAllPerf();
     Object findById(Integer id);

@@ -14,5 +14,6 @@ import java.util.Map;
 public class PerfDataResponse {
 
     private String message;
-    private Map<String, Map<String,Integer>> dataMap;
+    private Map<String, Map<String,String>> dataMap;
 }
+// Changed to String
